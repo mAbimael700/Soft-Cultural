@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./Simple-Slider.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Cultura Tabasco</title>
+</head>
+<body>
+
+    <!--============================-->
+    <!-- Encabezado -->
+    <!--============================-->
+
+    <header class="container-fluid bg-danger d-flex justify-content-center">
+
+        <p class="text-light mb-0 p-2 fs-7">Contactanos - 9932583030</p>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light p-3"id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+           <span class="text-danger fs-5 fw-bold"> Cultura Tabasco</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="eventos.html">Eventos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactos</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Buscar">
+              <button class="btn btn-danger btn-danger-outline-success" type="button">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!--============================-->
+    <!-- Slider de imagenes -->
+    <!--============================-->
+
+      <div id="eventos_mostrados" class="simple-slider" style="margin-top: 25px;">
+        <div class="swiper-container" style="max-width: 900px;max-height: 300px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: url(&quot;img/festivalChocolate.jpg&quot;) center center / cover no-repeat;"></div>
+                <div class="swiper-slide" style="background: url(&quot;img/img16.jpg&quot;) center center / cover no-repeat;"></div>
+                <div class="swiper-slide" style="background: url(&quot;img/img17.png&quot;) center center / cover no-repeat;"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+    <!--============================-->
+    <!-- INTRO -->
+    <!--============================-->
+
+    <section class="w-50 mx-auto text-center pt-5"id=intro>
+        <h1 class="p-3 fs-2 border-top border-3">La pagina que necesitabas para conocer Tabasco<span class="text-danger"> Secretaria de cultura Tabasco</span></h1>
+        <p class="p-3 fs-4"><span class="text-danger"> Cultura Tabasco</span>
+            Impulsa la educación y la investigación artística y cultural.</p>
+    </section>
+
+    <!--============================-->
+    <!-- EVENTOS -->
+    <!--============================-->
+
+    <section class="container-fluid">
+        <div class="row w-75 mx-auto servicio-fila">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap ">
+                <img src="./img/img12.jpg" alt="Centros Culturales" width="200" height=120>
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Centros Culturales</h3>
+                    <p class="px-4">Un muestreo de los centros culturales distribuidos por el estado</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap ">
+                <img src="./img/img13.jpg" alt="Centros Culturales" width="200" height=120>
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Mes del ilustrador</h3>
+                    <p class="px-4">Dedicamos un mes completo a ese ilustrador que llevamos dentro</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap ">
+                <img src="./img/img14.jpg" alt="Centros Culturales" width="200" height=120>
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Arte en movimiento</h3>
+                    <p class="px-4">Convocatoria</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap ">
+                <img src="./img/img15.png" alt="Centros Culturales" width="200" height=120>
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">PADA</h3>
+                    <p class="px-4">Programa anual de desarrollo archivistico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="Simple-Slider.js"></script>
+
+</body>
+</html>
