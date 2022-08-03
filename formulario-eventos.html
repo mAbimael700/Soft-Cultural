@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Cultura de Tabasco</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light p-3"id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+           <span class="text-danger fs-5 fw-bold"> Cultura Tabasco</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="eventos.html">Eventos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactos</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Buscar">
+              <button class="btn btn-danger btn-danger-outline-success me-2" type="button">Buscar</button>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#filtro_busqueda" aria-expanded="false" aria-controls="filtro_busqueda"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-filter-right" viewBox="0 0 16 16">
+                <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/>
+              </svg></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="d-grid gap-2">
+              <button class="btn btn-danger" type="button">Crear un evento</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2">
+              <button class="btn btn-danger" type="button">Crear un sub evento</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2">
+              <button class="btn btn-danger" type="button">Editar un evento existente</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2">
+              <button class="btn btn-danger" type="button">Editar un Sub evento existente</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container rounded shadow min-vh-100 py-2">
+        <div class="row">
+            <form>
+              <label for="" class="form-label">Seleccione al evento que pertenece</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione una opción</option>
+                        </select>
+
+                <div class="col-6">
+                    <label for="" class="form-label"> Nombre del evento</label>
+                    <input type="text" class="form-control" id="NombreEventoInput">
+                </div>
+                
+              
+                    <div class="row justify">
+                        <div class="col-lg-3 col-sm-6">
+                            <label for="startDate">Inicio del evento</label>
+                            <input id="startDate" class="form-control" type="date" />
+                            <span id="startDateSelected"></span>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <label for="endDate">Fin del evento</label>
+                            <input id="endDate" class="form-control" type="date" />
+                            <span id="endDateSelected"></span>
+                        </div>
+                    </div>
+                    <div class="align self justify-content-center w-50">
+                        <label for="" class="form-label">Seleccione el Estado</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione una opción</option>
+                            <option value="1">Balancan</option>
+                            <option value="2">Cárdenas</option>
+                            <option value="3">Centla</option>
+                            <option value="4">Centro</option>
+                            <option value="5">Comalcalco</option>
+                            <option value="6">Cunduacán</option>
+                            <option value="7">Emiliano Zapata</option>
+                            <option value="8">Huimanguillo</option>
+                            <option value="9">Jalapa</option>
+                            <option value="10">Jalpa de Méndez</option>
+                            <option value="11">Jonuta</option>
+                            <option value="12">Macuspana</option>
+                            <option value="13">Nacajuca</option>
+                            <option value="14">Paraíso</option>
+                            <option value="15">Tacotalpa</option>
+                            <option value="16">Teapa</option>
+                            <option value="17">Tenosique</option>
+                        </select>
+                        
+                    </div>
+                    <div class="align self justify-content-center w-50">
+                      <label for="" class="form-label">Seleccione la área recreativa donde se realizará</label>
+                          <select class="form-select" aria-label="Default select example">
+                              <option selected>Seleccione una opción</option>
+                          </select>
+                    </div>
+                    <div class="align self justify-content-center w-50">
+                        <label for="" class="form-label">Seleccione el tipo del evento</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione una opción</option>
+                            <option value="1">Cultural</option>
+                            <option value="2">Social</option>
+                            <option value="3">Artístico</option>
+                            <option value="4">Deportivo</option>
+                            <option value="5">Gastronomico</option>
+                        </select>
+                    </div>
+                    <div class="mb-5">
+                      <label for="exampleFormControlTextarea1" class="form-label">Descripción Corta del Evento</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                      <label for="exampleFormControlTextarea1" class="form-label">Descripción del Evento</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+
+                      <label for="exampleFormControlTextarea1" class="form-label">Dirección</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+            </form>
+        </div>
+        <!--<embed src= "Presentación1.pdf" width= "1000" height= "1000">-->
+
+      </div>
+      <script>
+            let startDate = document.getElementById('startDate')
+            let endDate = document.getElementById('endDate')
+
+            startDate.addEventListener('change',(e)=>{
+            let startDateVal = e.target.value
+            document.getElementById('startDateSelected').innerText = startDateVal
+            })
+
+            endDate.addEventListener('change',(e)=>{
+            let endDateVal = e.target.value
+            document.getElementById('endDateSelected').innerText = endDateVal
+            })
+      </script>
+</body>
+</html>
